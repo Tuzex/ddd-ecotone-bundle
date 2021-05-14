@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor;
+namespace Tuzex\Bundle\Ddd\Messaging\Interceptor;
 
 use Ecotone\Messaging\Attribute\Interceptor\Around;
 use Ecotone\Messaging\Handler\Processor\MethodInvoker\MethodInvocation;
@@ -16,7 +16,7 @@ final class DomainEventsAspectDispatcher implements AspectDispatcher
         private DomainEventsEmitter $domainEventEmitter,
     ) {}
 
-//    #[Around(pointcut: CommandBus::class.'||'.EventBus::class)]
+    #[Around(pointcut: CommandBus::class.'||'.EventBus::class)]
     public function dispatch(MethodInvocation $invocation): void
     {
         $invocation->proceed();

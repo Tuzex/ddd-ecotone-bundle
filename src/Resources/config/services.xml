@@ -13,14 +13,14 @@
         <service id="Tuzex\Ddd\Domain\Timing\Clock" alias="Tuzex\Ddd\Infrastructure\Domain\Timing\SystemClock"/>
         <service id="Tuzex\Ddd\Infrastructure\Domain\Timing\SystemClock"/>
 
-        <service id="Tuzex\Ddd\Application\CommandBus" alias="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareCommandBus"/>
-        <service id="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareCommandBus"/>
+        <service id="Tuzex\Ddd\Application\CommandBus" alias="Tuzex\Bundle\Ddd\Messaging\EcotoneAwareCommandBus"/>
+        <service id="Tuzex\Bundle\Ddd\Messaging\EcotoneAwareCommandBus"/>
 
-        <service id="Tuzex\Ddd\Application\DomainEventBus" alias="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareDomainEventBus"/>
-        <service id="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareDomainEventBus"/>
+        <service id="Tuzex\Ddd\Application\DomainEventBus" alias="Tuzex\Bundle\Ddd\Messaging\EcotoneAwareDomainEventBus"/>
+        <service id="Tuzex\Bundle\Ddd\Messaging\EcotoneAwareDomainEventBus"/>
 
-        <service id="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor\CommandsAspectDispatcher"/>
-        <service id="Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor\DomainEventsAspectDispatcher"/>
+        <service id="Tuzex\Bundle\Ddd\Messaging\Interceptor\CommandsAspectDispatcher"/>
+        <service id="Tuzex\Bundle\Ddd\Messaging\Interceptor\DomainEventsAspectDispatcher"/>
 
         <service id="Tuzex\Ddd\Application\Service\CommandsSpooler" alias="Tuzex\Ddd\Infrastructure\Messaging\InMemoryCommandsSpooler"/>
         <service id="Tuzex\Ddd\Infrastructure\Messaging\InMemoryCommandsSpooler"/>

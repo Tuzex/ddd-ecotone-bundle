@@ -7,14 +7,14 @@ namespace Tuzex\Bundle\Ddd\Test\DependencyInjection;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Tuzex\Bundle\Ddd\DependencyInjection\DddEcotoneExtension;
+use Tuzex\Bundle\Ddd\Messaging\EcotoneAwareCommandBus;
+use Tuzex\Bundle\Ddd\Messaging\EcotoneAwareDomainEventBus;
+use Tuzex\Bundle\Ddd\Messaging\Interceptor\CommandsAspectDispatcher;
+use Tuzex\Bundle\Ddd\Messaging\Interceptor\DomainEventsAspectDispatcher;
 use Tuzex\Ddd\Application\CommandBus;
 use Tuzex\Ddd\Application\DomainEventBus;
 use Tuzex\Ddd\Application\Service\CommandsSpooler;
 use Tuzex\Ddd\Application\Service\DomainEventsEmitter;
-use Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareCommandBus;
-use Tuzex\Ddd\Infrastructure\Messaging\Ecotone\EcotoneAwareDomainEventBus;
-use Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor\CommandsAspectDispatcher;
-use Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor\DomainEventsAspectDispatcher;
 use Tuzex\Ddd\Infrastructure\Messaging\InMemoryCommandsSpooler;
 use Tuzex\Ddd\Infrastructure\Messaging\InMemoryDomainEventsEmitter;
 

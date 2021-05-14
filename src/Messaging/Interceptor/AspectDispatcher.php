@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Ddd\Infrastructure\Messaging\Ecotone\Interceptor;
+namespace Tuzex\Bundle\Ddd\Messaging\Interceptor;
 
 use Ecotone\Messaging\Handler\Processor\MethodInvoker\MethodInvocation;
 

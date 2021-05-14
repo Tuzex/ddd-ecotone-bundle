@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Ddd\Infrastructure\Messaging\Ecotone;
+namespace Tuzex\Bundle\Ddd\Messaging;
 
 use Ecotone\Modelling\EventBus as EcotoneEventBus;
 use Tuzex\Ddd\Application\DomainEventBus;

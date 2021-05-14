@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Ddd\Infrastructure\Messaging\Ecotone;
+namespace Tuzex\Bundle\Ddd\Messaging;
 
 use Ecotone\Modelling\CommandBus as EcotoneCommandBus;
 use Tuzex\Ddd\Application\CommandBus;
